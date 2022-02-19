@@ -39,7 +39,7 @@ class AppDynamicsJob(unittest.TestCase):
         driver.find_element_by_link_text("My wish list").click()
         driver.find_element_by_name("wishlist").click()
         driver.find_element_by_name("wishlist").clear()
-        driver.find_element_by_name("wishlist").send_keys("MyNew_wishlist15")
+        driver.find_element_by_name("wishlist").send_keys("fresh_list2")
         driver.find_element_by_xpath("//button[@type='submit']").click()
         #driver.find_element_by_link_text("MyNew_wishlist1").click()
         #driver.find_element_by_xpath(
@@ -80,4 +80,7 @@ class AppDynamicsJob(unittest.TestCase):
         # To know more about the difference between verify and assert,
         # visit https://www.seleniumhq.org/docs/06_test_design_considerations.jsp#validating-results
         self.assertEqual([], self.verificationErrors)
+
+if __name__ == "__main__":
+    unittest.main()
 
